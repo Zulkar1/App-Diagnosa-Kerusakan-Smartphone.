@@ -1,0 +1,44 @@
+unit DataModulo;
+
+interface
+
+uses
+  SysUtils, Classes, DB, ADODB, Menus;
+
+type
+  TDataModule2 = class(TDataModule)
+    ADOConnection1: TADOConnection;
+    ADOPelanggan: TADOTable;
+    DataSource1: TDataSource;
+    ADOPelangganNo: TAutoIncField;
+    ADOPelangganBootloop: TWideStringField;
+    ADOPelangganKerusakan: TWideStringField;
+    ADOQuery2: TADOQuery;
+    ADOQuery2No: TAutoIncField;
+    ADOQuery2Bootloop: TWideStringField;
+    ADOQuery2Kerusakan: TWideStringField;
+    DataSource2: TDataSource;
+    ADOQuery2Smartphone_Menyala: TWideStringField;
+    ADOQuery2Mengisi_Daya: TWideStringField;
+    ADOQuery2Force_Close: TWideStringField;
+    ADOQuery2Terkena_Air: TWideStringField;
+    ADOQuery2Charger_Mudah_Lepas: TWideStringField;
+    ADOPelangganMengisi_Daya: TWideStringField;
+    ADOPelangganSmartphone_Menyala: TWideStringField;
+    ADOPelangganForce_Close: TWideStringField;
+    ADOPelangganTerkena_Air: TWideStringField;
+    ADOPelangganCharger_Mudah_Lepas: TWideStringField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModule2: TDataModule2;
+
+implementation
+
+{$R *.dfm}
+
+end.
